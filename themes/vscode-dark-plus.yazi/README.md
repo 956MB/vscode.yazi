@@ -1,6 +1,6 @@
 # vscode-dark-plus
 
-[themes/](../) · [vscode-dark-modern](../vscode-dark-modern/) · [vscode-light-modern](../vscode-light-modern/) · [vscode-light-plus](../vscode-light-plus/)
+[themes/](../) · [vscode-dark-modern](../vscode-dark-modern.yazi/) · [vscode-light-modern](../vscode-light-modern.yazi/) · [vscode-light-plus](../vscode-light-plus.yazi/)
 
 ![vscode-dark-plus](./img/1.png)
 
