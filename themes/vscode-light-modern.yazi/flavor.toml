@@ -1,0 +1,186 @@
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+
+# vscode-light-modern
+# https://github.com/956MB/vscode.yazi/blob/main/themes/vscode-light-modern/
+#
+# A theme inspired by Visual Studio Code's Light Modern theme.
+
+[colors]
+background = "#FFFFFF"
+foreground = "#3B3B3B"
+selection = "#ADD6FF"
+cursor = "#005FB8"
+black = "#000000"
+red = "#F85149"
+green = "#2EA043"
+yellow = "#D7BA7D"
+blue = "#005FB8"
+magenta = "#AF00DB"
+cyan = "#0598BC"
+white = "#FFFFFF"
+bright_black = "#6E7681"
+bright_red = "#F85149"
+bright_green = "#2EA043"
+bright_yellow = "#D7BA7D"
+bright_blue = "#005FB8"
+bright_magenta = "#AF00DB"
+bright_cyan = "#0598BC"
+bright_white = "#FFFFFF"
+
+[manager]
+cwd = { fg = "cyan" }
+# Hovered
+hovered         = { fg = "#000000", bg = "#ADD6FF" }
+preview_hovered = { underline = true }
+# Find
+find_keyword  = { fg = "#795E26", bold = true, italic = true, underline = true }
+find_position = { fg = "#AF00DB", bg = "#FFFFFF", bold = true, italic = true }
+# Marker
+marker_copied   = { fg = "#2EA043", bg = "#2EA043" }
+marker_cut      = { fg = "#F85149", bg = "#F85149" }
+marker_marked   = { fg = "#0598BC", bg = "#0598BC" }
+marker_selected = { fg = "#D7BA7D", bg = "#D7BA7D" }
+# Tab
+tab_active   = { fg = "#3B3B3B", bg = "#FFFFFF" }
+tab_inactive = { fg = "#3B3B3B", bg = "#F8F8F8" }
+tab_width    = 1
+# Count
+count_copied   = { fg = "#FFFFFF", bg = "#2EA043" }
+count_cut      = { fg = "#FFFFFF", bg = "#F85149" }
+count_selected = { fg = "#FFFFFF", bg = "#D7BA7D" }
+# Border
+border_symbol = "│"
+border_style  = { fg = "#E5E5E5" }
+# Highlighting
+syntect_theme = "./tmtheme.xml"
+# Cursor
+cursor_symbol = "█"
+cursor = { fg = "#FFFFFF", bg = "#005FB8" }
+# Executable
+exe_symbol = ""
+exe = { fg = "#2EA043", bg = "#FFFFFF" }
+# Regular
+file_symbol = ""
+file = { }
+# Directory
+folder_symbol = ""
+folder = { fg = "#005FB8", bg = "#FFFFFF" }
+# Hidden
+hidden_symbol = ""
+hidden = { fg = "#6E7681" }
+# Link
+link_symbol = ""
+link = { fg = "#0598BC", bg = "#FFFFFF" }
+# Link (broken)
+broken_symbol = ""
+broken = { fg = "#F85149", bg = "#FFF0F0" }
+# Selected
+selected = { fg = "#000000", bg = "#ADD6FF" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#E5E5E5", bg = "#E5E5E5" }
+# Mode
+mode_normal = { fg = "#FFFFFF", bg = "#005FB8", bold = true }
+mode_select = { fg = "#FFFFFF", bg = "#FFAF00", bold = true }
+mode_unset  = { fg = "#FFFFFF", bg = "#F85149", bold = true }
+# Progress
+progress_label  = { bold = true }
+progress_normal = { fg = "#005FB8", bg = "#FFFFFF" }
+progress_error  = { fg = "#F85149", bg = "#FFFFFF" }
+# Permissions
+permissions_t = { fg = "#2EA043" }
+permissions_r = { fg = "#D7BA7D" }
+permissions_w = { fg = "#F85149" }
+permissions_x = { fg = "#0598BC" }
+permissions_s = { fg = "#6E7681" }
+
+[select]
+border   = { fg = "#005FB8" }
+active   = { fg = "#AF00DB", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#005FB8" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#005FB8" }
+active   = { bg = "#ADD6FF" }
+inactive = {}
+# Icons
+icon_file    = ""
+icon_folder  = ""
+icon_command = ""
+
+[tasks]
+border  = { fg = "#005FB8" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#FFFFFF" }
+cand            = { fg = "#0598BC" }
+rest            = { fg = "#6E7681" }
+desc            = { fg = "#AF00DB" }
+separator       = "  "
+separator_style = { fg = "#6E7681" }
+
+[help]
+on      = { fg = "#0598BC" }
+run     = { fg = "#AF00DB" }
+desc    = { fg = "#3B3B3B" }
+hovered = { bg = "#ADD6FF", bold = true }
+footer  = { fg = "#3B3B3B", bg = "#F8F8F8" }
+
+[filetype]
+rules = [
+    # Images
+    { mime = "image/*", fg = "#D7BA7D" },
+    # Videos
+    { mime = "video/*", fg = "#AF00DB" },
+    # Audio
+    { mime = "audio/*", fg = "#AF00DB" },
+    # Archives
+    { mime = "application/zip", fg = "#F85149" },
+    { mime = "application/gzip", fg = "#F85149" },
+    { mime = "application/x-tar", fg = "#F85149" },
+    { mime = "application/x-bzip", fg = "#F85149" },
+    { mime = "application/x-bzip2", fg = "#F85149" },
+    { mime = "application/x-7z-compressed", fg = "#F85149" },
+    { mime = "application/x-rar", fg = "#F85149" },
+    # Documents
+    { mime = "application/pdf", fg = "#0598BC" },
+    { mime = "application/msword", fg = "#0598BC" },
+    { mime = "application/vnd.openxmlformats-officedocument.*", fg = "#0598BC" },
+    # Fallback
+    { name = "*", fg = "#3B3B3B" },
+    { name = "*/", fg = "#005FB8" },
+    # Executable
+    { name = "*", category = "executable", fg = "#2EA043", bg = "#FFFFFF" },
+    # Directories
+    { name = "*/", fg = "#005FB8", bg = "#FFFFFF" },
+    # Hidden files
+    { name = ".*", fg = "#6E7681" },
+    # Symlinks
+    { name = "*", category = "link", fg = "#0598BC", bg = "#FFFFFF" },
+    # Broken symlinks
+    { name = "*", category = "broken", fg = "#F85149", bg = "#FFF0F0" },
+]
+
+[icon]
+rules = [
+    { name = "Desktop", text = "" },
+    { name = "Documents", text = "" },
+    { name = "Downloads", text = "" },
+    { name = "Pictures", text = "" },
+    { name = "Music", text = "" },
+    { name = "Videos", text = "" },
+    { name = ".git", text = "" },
+    { name = ".config", text = "" },
+]
