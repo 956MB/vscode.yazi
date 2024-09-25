@@ -1,6 +1,6 @@
 # vscode.yazi
 
-[yazi](https://github.com/sxyazi/yazi) flavors (themes) matching the [Visual Studio Code](https://code.visualstudio.com/) default colors.
+[yazi](https://github.com/sxyazi/yazi) flavors (themes) matching the [Visual Studio Code](https://code.visualstudio.com/) default colors. Matches well with [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
 
 ![vscode-dark-modern](./img/preview.png)
 
