@@ -64,7 +64,7 @@ Feel free to open an [issue](https://github.com/956MB/vscode.yazi/issues) or [PR
 
 - [sxyazi/yazi](https://github.com/sxyazi/yazi) Terminal file manager
 - [microsoft/vscode](https://github.com/microsoft/vscode) Visual Studio Code
-- [vMofiqul/vscode.nvim](https://github.com/Mofiqul/vscode.nvim) Neovim colorscheme author
+- [Mofiqul/vscode.nvim](https://github.com/Mofiqul/vscode.nvim) Neovim colorscheme author
 
 ## License
 
