@@ -40,7 +40,8 @@ cp -r vscode.yazi/themes/vscode-dark-modern.yazi ~/.config/yazi/flavors/
 
 ```toml
 [flavor]
-use = "vscode-dark-modern"
+dark = "vscode-dark-modern"
+light = "vscode-light-modern"
 ```
 
 >[!NOTE]
