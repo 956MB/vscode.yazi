@@ -1,0 +1,19 @@
+[submodule "themes/vscode-dark-modern.yazi"]
+	path = themes/vscode-dark-modern.yazi
+	url = https://github.com/956MB/vscode-dark-modern.yazi
+    branch = main
+
+[submodule "themes/vscode-dark-plus.yazi"]
+    path = themes/vscode-dark-plus.yazi
+    url = https://github.com/956MB/vscode-dark-plus.yazi
+    branch = main
+
+[submodule "themes/vscode-light-modern.yazi"]
+    path = themes/vscode-light-modern.yazi
+    url = https://github.com/956MB/vscode-light-modern.yazi
+    branch = main
+
+[submodule "themes/vscode-light-plus.yazi"]
+    path = themes/vscode-light-plus.yazi
+    url = https://github.com/956MB/vscode-light-plus.yazi
+    branch = main
