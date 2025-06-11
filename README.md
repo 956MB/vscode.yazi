@@ -1,13 +1,11 @@
 <div align="center">
 <img src="https://github.com/sxyazi/yazi/blob/main/assets/logo.png?raw=true" alt="Yazi logo" width="20%">
-</div>
-
-<h3 align="center">
+<h3>
     vscode.yazi
 </h3>
-
-<div align="center">
+<p>
     <a href="https://github.com/sxyazi/yazi"> flavors</a> (themes) matching the <a href="https://code.visualstudio.com/">Visual Studio Code</a> default colors. Matches well with <a href="https://github.com/Mofiqul/vscode.nvim">vscode.nvim</a>
+</p>
 </div>
 
 ## Preview
@@ -35,7 +33,11 @@ _Screenshots can be found in `<theme>/img/*`_
 2. Run the following command to install the flavor as a yazi package:
 
 ```bash
-yazi pack -a 956MB/vscode-dark-modern
+# v25.5.28+
+ya pkg add 956MB/vscode-dark-modern
+
+# pre v25.5.28 (deprecated)
+ya pack -a 956MB/vscode-dark-modern
 ```
 
 3. Update your `~/.config/yazi/theme.toml` config to use the new theme.
