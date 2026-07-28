@@ -34,6 +34,8 @@ _Screenshots can be found in `<theme>/img/*`_
 
 ```bash
 # v25.5.28+
+ # Supports new Tab Bar (v25.5.31+)
+ ya pkg add 956MB/vscode-dark-modern
 ya pkg add 956MB/vscode-dark-modern
 
 # pre v25.5.28 (deprecated)
